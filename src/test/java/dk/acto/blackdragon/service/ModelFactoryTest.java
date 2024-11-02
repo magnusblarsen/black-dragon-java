@@ -15,12 +15,7 @@ public class ModelFactoryTest {
 
         String data = String.valueOf(context.getAttribute("data"));
 
-        ModelFactory<Model> subject = new ModelFactory<Model>() {
-            @Override
-            public List<Model> parse(String string) {
-                return null;
-            }
-        };
+        ModelFactory<Model> subject = new ModelFactoryImpl();
 
         List<Model> result = subject.parse(data);
         assertNotNull(result);

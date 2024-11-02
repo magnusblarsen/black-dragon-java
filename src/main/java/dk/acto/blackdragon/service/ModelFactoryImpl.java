@@ -18,9 +18,8 @@ public class ModelFactoryImpl implements ModelFactory<Model> {
                 .cost(Integer.parseInt(line[2]))
                 .inventory(Long.parseLong(line[3]));
 
-            result.append(modelBuilder.build());
+            result = result.append(modelBuilder.build());
         }
         return result;
     }
-    
 }

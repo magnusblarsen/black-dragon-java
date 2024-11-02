@@ -12,12 +12,7 @@ public class AuthorDataFactoryTest {
     @Test(groups = "transform")
     public void testCreate(ITestContext context) {
 
-        AuthorDataFactory subject = new AuthorDataFactory() {
-            @Override
-            public AuthorData create() {
-                return null;
-            }
-        };
+        AuthorDataFactory subject = new AuthorDataFactoryImpl();
 
         AuthorData result = subject.create();
         assertNotNull(result);

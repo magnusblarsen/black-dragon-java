@@ -14,12 +14,7 @@ public class DataFetcherTest {
     @Test(groups = "fetch")
     public void testFetchData(ITestContext context) throws Exception {
 
-        DataFetcher subject = new DataFetcher() {
-            @Override
-            public String fetchData(URL url) {
-                return null;
-            }
-        };
+        DataFetcher subject = new DataFetcherImpl();
 
         String result = subject.fetchData(new URL("https://dragon.acto.dk/test.csv"));
         assertNotNull(result);
