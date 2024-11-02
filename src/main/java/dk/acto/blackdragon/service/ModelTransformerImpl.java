@@ -2,8 +2,6 @@ package dk.acto.blackdragon.service;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 import dk.acto.blackdragon.model.Model;
 import dk.acto.blackdragon.model.Stats;
